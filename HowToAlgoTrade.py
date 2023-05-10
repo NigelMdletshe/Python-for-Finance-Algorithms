@@ -39,3 +39,5 @@ print(balance)
 
 #if 2 red bars,buy
 # sell after 1 green bar
+
+#Having issues installing Vectorbt, inside the env or globally
