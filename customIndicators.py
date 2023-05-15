@@ -5,5 +5,9 @@
 
 from backtesting import Backtest, Strategy
 from backtesting.test import GOOG
+import numpy as np
+
+GOOG["Signal"] = np.random.randinit(-1,2,len(GOOG))
+
 
 print(GOOG)
