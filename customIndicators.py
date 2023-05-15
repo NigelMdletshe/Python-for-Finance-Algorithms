@@ -15,6 +15,9 @@ class SignalStrategy(Strategy):
     def init(self):
         pass
     def next(self):
+        print(self.data.Close[-1])
+        print(len(self.data.Close))
+
         pass
 
 bt = Backtest(GOOG, SignalStrategy, cash = 10_000)
