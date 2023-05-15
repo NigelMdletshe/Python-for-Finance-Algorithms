@@ -11,3 +11,12 @@ GOOG["Signal"] = np.random.randinit(-1,2,len(GOOG))
 
 
 print(GOOG)
+class SignalStrategy(Strategy):
+    def init(self):
+        pass
+    def next(self):
+        pass
+
+bt = Backtest(GOOG, SignalStrategy, cash = 10_000)
+
+stats = bt.run()
