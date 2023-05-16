@@ -14,6 +14,7 @@ print(GOOG)
 class SignalStrategy(Strategy):
     def init(self):
         pass
+    
     def next(self):
         print(self.data.Close[-1])
         print(len(self.data.Close))
